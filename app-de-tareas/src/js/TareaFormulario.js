@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import '../css/tareaFormulario.css';
 import  {v4 as uuidv4} from 'uuid';
+import Flip from 'react-reveal/Flip';
+
 
 function TareaFormulario(props){
 
@@ -24,7 +26,7 @@ function TareaFormulario(props){
 
 
 
-    return(
+    return(<Flip bottom  cascade>
         <form className="tarea-formulario" onSubmit={manejarEnvio}>
             <input
             className="tarea-input"
@@ -34,7 +36,7 @@ function TareaFormulario(props){
             onChange={manejarCambio}
             />
             <button className="tarea-boton">Agregar Tarea</button>
-        </form>
+        </form></Flip >
     );
 
 }

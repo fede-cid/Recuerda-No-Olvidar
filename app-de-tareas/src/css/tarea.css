@@ -10,6 +10,7 @@
     cursor: pointer;
     border: 1px solid white ;
     align-items: center;
+    transition: 1s;
 }
 
 .tarea-texto{

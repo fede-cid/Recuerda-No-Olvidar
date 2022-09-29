@@ -3,6 +3,7 @@ import TareaFormulario from "./TareaFormulario";
 import '../css/listaDeTareas.css'
 import Tarea  from "./Tareas";
 
+
 function ListaDeTareas(){
 
     const [tareas, setTareas] = useState([])
@@ -33,7 +34,9 @@ function ListaDeTareas(){
     return (
         <>
          <TareaFormulario onSubmit={agregarTarea} />
+         
          <div className='tareas-lista-contendor'>
+         
             {
                tareas.map((tarea)=>
                <Tarea
@@ -46,7 +49,9 @@ function ListaDeTareas(){
                />
                )
             }
+          
          </div>
+         
         </>
     )
 }
