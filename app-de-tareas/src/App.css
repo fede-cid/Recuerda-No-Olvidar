@@ -5,10 +5,19 @@
 }
 html,
 body{
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/imagenes/7478e441a4a1b08ee1491eea6e376fbcce37eb64_00.jpg') ;
+  background-repeat :no-repeat ;
+  background-size: cover;
   color:rgb(0, 136, 255);
-  background-color: aliceblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1{
@@ -25,14 +34,7 @@ h2{
 .App{
   width: 100%;
   height: 100%;
-  background-image:  linear-gradient(
-    to bottom,
-    rgba(255, 255, 0, 0.5),
-    rgba(0, 0, 255, 0.5)
-  ), url('../src/imagenes/7478e441a4a1b08ee1491eea6e376fbcce37eb64_00.jpg') ;
-  background-repeat :no-repeat ;
-  background-size: cover;
-  background-color: aliceblue;
+ 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -42,7 +44,7 @@ h2{
 /* LISTA DE TAREAS */
 .tarea-lista-principal{
   width: 600PX;
-  height: 93vh;
+  height: 92vh;
   background-color: rgb(61, 61, 61);
   margin: 10px;
   padding: 20px;
