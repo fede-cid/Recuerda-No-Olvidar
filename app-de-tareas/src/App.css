@@ -43,13 +43,13 @@ h2{
 }
 /* LISTA DE TAREAS */
 .tarea-lista-principal{
-  width: 600PX;
-  height: 92vh;
+  max-width: 600PX;
+  max-height: 92vh;
   background-color: rgb(61, 61, 61);
   margin: 10px;
   padding: 20px;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 7px;
   opacity: 0.8;
   overflow-y:scroll;
 }
