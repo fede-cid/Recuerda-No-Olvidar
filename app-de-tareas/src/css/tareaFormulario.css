@@ -7,7 +7,7 @@
 }
 
 .tarea-input {
-    width: 350px;
+    max-width: 350px;
     font-size: 18px;
     background-color: white;
     padding: 14px 32px 14px 16px;
