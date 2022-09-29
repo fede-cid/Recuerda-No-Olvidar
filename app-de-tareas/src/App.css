@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  color:rgb(0, 136, 255);
+  background-color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1{
+  color: darkblue;
+  text-shadow: 2px 2px black;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2{
+  color: darkblue;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.App{
+  background-image:  linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  ), url('../src/imagenes/7478e441a4a1b08ee1491eea6e376fbcce37eb64_00.jpg') ;
+  background-repeat :no-repeat ;
+  background-size: cover;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* LISTA DE TAREAS */
+.tarea-lista-principal{
+  width: 600PX;
+  height: 93vh;
+  background-color: rgb(61, 61, 61);
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+  border-radius: 30px;
+  opacity: 0.8;
+  overflow-y:scroll;
+}
+
+
+
+.tarea-lista-principal{
+  /*Estilos estándar experimentales (Principalmente Firefox)*/
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width:inherit;
+}
+.tarea-lista-principal::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.tarea-lista-principal::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.tarea-lista-principal::-webkit-scrollbar-button:increment,.tarea-lista-principal::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.tarea-lista-principal::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.tarea-lista-principal::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.tarea-lista-principal::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
