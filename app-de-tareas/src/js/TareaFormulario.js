@@ -6,10 +6,11 @@ import Flip from 'react-reveal/Flip';
 
 function TareaFormulario(props){
 
-    const [input, setImput] = useState('')
+    const [input, setInput] = useState('')
 
     const manejarCambio = e => {
-        setImput(e.target.value);
+        setInput(e.target.value);
+        
         
     };
 
@@ -19,9 +20,11 @@ function TareaFormulario(props){
         const tareaNueva = {
             id: uuidv4(),
             texto: input,
-            completada: false
+            completada: false,
+        
         }
         props.onSubmit(tareaNueva)
+        setInput('')
     };
 
 
@@ -33,6 +36,7 @@ function TareaFormulario(props){
             type='text'
             placeholder="Escribe una tarea"
             name="texto"
+            value={input}
             onChange={manejarCambio}
             />
             <button className="tarea-boton">Agregar Tarea</button>
